@@ -1,0 +1,22 @@
+@use '../abstract/' as *;
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0 !important;
+
+    &.btn-primary {
+        color: $col-bg;
+        background-color: $col-primary;
+        font-weight: 700;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $col-primary-light;
+            //color: $col-text;
+            text-decoration: none;
+        }
+    }
+
+}

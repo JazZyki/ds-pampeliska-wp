@@ -1,13 +1,63 @@
-@use 'abstract' as a;
+@use '../abstract/' as *;
 
 html {
-	font-size: a.$font-size;
+	font-size: $font-size;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-smooth: never;
 
 	body {
-		@include a.basic-font;
+		@include basic-font;
+		background-color: $col-bg;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			@include headings;
+			color: $col-primary;
+			font-weight: 700;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+
+			&.font-normalize {
+				@include basic-font;
+				font-weight: 700;
+			}
+		}
+
+		p {
+			strong {
+				color: $col-primary;
+			}
+		}
+		.important {
+			position: relative;
+			padding-left: 2rem;
+
+			&::before {
+				content: '!';
+				position: absolute;
+				color: $col-secondary;
+				font-size: 57px;
+				margin-right: 0.5rem;
+				left: 4px;
+				top: -11px;
+				font-family: "Coiny", system-ui;
+			}
+		}
+
+		.img-has-shadow {
+			img {
+				border-radius: 0.5rem;
+				--tw-shadow: 1rem 1rem 0 #626f47;
+				--tw-shadow-colored: 1rem 1rem 0 var(--tw-shadow-color);
+				box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+			}
+		}
 	}
 }

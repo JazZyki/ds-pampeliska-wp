@@ -1,0 +1,31 @@
+@use '../abstract/' as *;
+.carousel {
+    button {
+        &.carousel-control-prev {
+            left: -80px;
+
+        }
+        .carousel-control-prev-icon {
+            background-image: url('data:image/svg+xml,<svg width="800" height="800" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M160 220a11.96 11.96 0 0 1-8.485-3.515l-80-80a12 12 0 0 1 0-16.97l80-80a12 12 0 0 1 16.97 16.97L96.971 128l71.514 71.515A12 12 0 0 1 160 220" fill="%23626f47"/></svg>');
+        }
+        &.carousel-control-next {
+            right: -80px;
+
+        }
+        .carousel-control-next-icon {
+            background-image: url('data:image/svg+xml,<svg width="800" height="800" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M96 220a12 12 0 0 1-8.485-20.485L159.029 128 87.515 56.485a12 12 0 0 1 16.97-16.97l80 80a12 12 0 0 1 0 16.97l-80 80A11.96 11.96 0 0 1 96 220" fill="%23626f47"/></svg>');
+        }
+    }
+
+    .areoi-strip  {
+        height: max-content;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+.carousel-wrapper {
+    margin-top: 2rem;
+}

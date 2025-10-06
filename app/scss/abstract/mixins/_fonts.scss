@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @mixin basic-font {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 @mixin headings {
-    font-family: "Poppins", sans-serif;
+    font-family: "Coiny", system-ui;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
 }

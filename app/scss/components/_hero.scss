@@ -1,0 +1,29 @@
+@use '../abstract/' as *;
+.hp-hero {
+    min-height: calc(100vh - 120px) !important;
+    margin-top: 120px !important;
+
+    .wp-block-cover__image-background {
+        width: 60vw;
+        height: auto;
+        margin: 1vh auto;
+    }
+    .wp-block-cover__background {
+        background-color: transparent !important;
+    }
+
+    .hero-heading {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 13rem;
+
+        h2 {
+            font-size: 2rem !important;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $col-primary;
+        }
+    }
+}

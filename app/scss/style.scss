@@ -1,4 +1,5 @@
 @use "sass:math";
 
-@use 'base/index';
-@use 'components/index';
+@forward 'base/index';
+@forward 'components/index';
+@forward 'sections/index';

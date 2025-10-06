@@ -1,0 +1,19 @@
+@use '../abstract/' as *;
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: $col-bg;
+    z-index: 1000;
+
+    .wp-block-site-logo {
+        a.custom-logo-link {
+            img {
+                height: 80px;
+                width: auto;
+            }
+        }
+
+    }
+}

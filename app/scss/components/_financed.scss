@@ -1,0 +1,26 @@
+.financed-by {
+    width: 100%;
+    max-width: 100vw;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: white;
+
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    figure {
+        height: 80px;
+        margin-bottom: 0;
+        
+        img {
+            object-fit: contain !important;
+        }
+    }
+}
