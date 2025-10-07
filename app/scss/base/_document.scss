@@ -30,6 +30,10 @@ html {
 			}
 		}
 
+		h3 {
+			font-size: 1.25rem;
+		}
+
 		p {
 			strong {
 				color: $col-primary;
@@ -59,5 +63,13 @@ html {
 				box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 			}
 		}
+	}
+
+	.mt-big {
+		margin-top: 4rem;
+	}
+	
+	.padding-none {
+		padding: 0 !important;
 	}
 }
