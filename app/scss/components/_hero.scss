@@ -6,7 +6,9 @@
     .wp-block-cover__image-background {
         width: 60vw;
         height: auto;
+        max-height: 330px;
         margin: 1vh auto;
+        object-fit: contain;
     }
     .wp-block-cover__background {
         background-color: transparent !important;

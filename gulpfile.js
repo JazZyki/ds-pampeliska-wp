@@ -49,7 +49,8 @@ function ftpUpload() {
 		user: source.ftp.user,
 		password: source.ftp.password,
 		parallel: 5,
-		log: gutil.log
+		log: gutil.log,
+		useEpsv: true // 
 	});
 
 	return src('dist/**/*')
