@@ -1,4 +1,8 @@
 .btn-group {
     width: max-content;
     margin: 2rem auto;
+
+    &-vertical {
+        gap: 1rem;
+    }
 }

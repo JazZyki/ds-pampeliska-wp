@@ -1,9 +1,9 @@
 {
     "ftp": {
-        "host": "pampeliska.jazzyki.cz",
+        "host": "ftpx.forpsi.com",
         "port": 21,
-        "user": "pampeliska.jazzyki.cz",
-        "password": "1*pampeliska2025",
-        "remoteFolder": "/pampeliska-theme"
+        "user": "www.dspampeliska.cz",
+        "password": "1*Pampeliska2025",
+        "remoteFolder": "/www/pampeliska-theme"
     }
 }

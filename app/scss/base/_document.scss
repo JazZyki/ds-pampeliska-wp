@@ -55,6 +55,16 @@ html {
 			}
 		}
 
+		a {
+			color: $col-primary;
+			font-weight: 900;
+			transition: all 0.3s ease;
+
+			&:hover {
+				color: $col-primary-darker;
+			}
+		}
+
 		.img-has-shadow {
 			img {
 				border-radius: 0.5rem;

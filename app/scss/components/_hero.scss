@@ -2,13 +2,19 @@
 .hp-hero {
     min-height: calc(100vh - 120px) !important;
     margin-top: 120px !important;
+    @media (#{$md-down}) {
+        align-items: flex-start !important;
+    }
 
     .wp-block-cover__image-background {
-        width: 60vw;
+        width: 50vw;
         height: auto;
         max-height: 330px;
         margin: 1vh auto;
         object-fit: contain;
+        @media (#{$md-down}) {
+            display: none;
+        }
     }
     .wp-block-cover__background {
         background-color: transparent !important;
@@ -19,13 +25,23 @@
         justify-content: center;
         flex-direction: column;
         margin-bottom: 13rem;
+        @media (#{$md-down}) {
+            margin-bottom: 18rem;
+        }
 
         h2 {
-            font-size: 2rem !important;
+            font-size: 2vw !important;
             line-height: 1.2;
             font-weight: 700;
             text-transform: uppercase;
             color: $col-primary;
+            @media (#{$md-down}) {
+                font-size: 1.15rem !important;
+            }
         }
+    }
+
+    .wp-block-cover__inner-container {
+        padding: 0;
     }
 }

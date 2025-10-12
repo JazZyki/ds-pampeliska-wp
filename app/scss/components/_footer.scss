@@ -12,6 +12,10 @@ footer {
         }
     }
 
+    a {
+        word-wrap: break-word;
+    }
+
     .financed-by-contacts {
         figure {
             &.wp-block-gallery.has-nested-images {
@@ -23,6 +27,25 @@ footer {
                 max-height: 100px;
                 width: auto;
                 object-fit: contain !important;
+            }
+        }
+    }
+
+    .kontacts-detail {
+        @media (#{$md-down}) {
+            padding: 0;
+        }
+        > .row {
+            > .col {
+                @media (#{$md-down}) {
+                    padding: 0;
+                }
+    
+                .container {
+                    @media (#{$md-down}) {
+                        padding: 0;
+                    }
+                }
             }
         }
     }

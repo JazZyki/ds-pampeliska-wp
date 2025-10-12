@@ -1,0 +1,76 @@
+@use '../abstract/' as *;
+
+nav {
+    &.wp-block-navigation {
+        ul {
+            &.wp-block-navigation__container {
+                gap: 3rem;
+
+                li {
+                    a.wp-block-navigation-item__content {
+                        position: relative;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: $col-primary;
+                        text-shadow: -2px -2px 0 $col-bg, 
+                                    2px -2px 0 $col-bg, 
+                                    -2px 2px 0 $col-bg, 
+                                    2px 2px 0 $col-bg;
+                        @include headings;
+                        
+                        transition: all 0.3s ease;
+
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            position: absolute;
+                            top: 50%;
+                            left: -1.5rem;
+                            background-color: $col-secondary;
+                            border-radius: 50%;
+                            opacity: 0;
+                            transform: translateY(-50%);
+                            transition: all 0.3s ease;
+                            z-index: -1;
+                        }
+
+                        &:hover {
+                            color: $col-primary-darker;
+                            text-decoration: none;
+
+                            &::before {
+                                opacity: 1;
+                                transform: translateY(-50%);
+                                left: -1rem;
+                                top: 70%;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        a {
+                            &::before {
+                                right: -1.5rem;
+                                left: unset;
+                            }
+                            &:hover {
+                                &::before {
+                                    top: 20%;
+                                    right: -1rem;
+                                    left: unset;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .wp-block-navigation__responsive-container {
+            background-color: $col-bg !important;
+            padding: 2rem;
+        }
+    }
+}
