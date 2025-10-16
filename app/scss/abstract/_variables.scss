@@ -14,3 +14,8 @@ $sm-down: "(max-width: #{$breakpoint-sm})";
 $md-down: "(max-width: #{$breakpoint-md})";
 $lg-down: "(max-width: #{$breakpoint-lg})";
 $xl-down: "(max-width: #{$breakpoint-xl})";
+
+$sm-up: "(min-width: #{$breakpoint-sm + 1})";
+$md-up: "(min-width: #{$breakpoint-md + 1})";
+$lg-up: "(min-width: #{$breakpoint-lg + 1})";
+$xl-up: "(min-width: #{$breakpoint-xl + 1})";

@@ -1,0 +1,21 @@
+@use '../abstract/' as *;
+.peoples {
+    .row {
+        gap: 2rem;
+        justify-items: space-between;
+    }
+
+    .col {
+        width: calc(50% - 2rem);
+        @media ($md-up) {
+            width: calc(25% - 2rem);
+        }
+    }
+
+    .wp-element-caption {
+        text-align: center;
+        @include headings;
+        color: $col-primary;
+        font-size: 1.3rem;
+    }
+}
