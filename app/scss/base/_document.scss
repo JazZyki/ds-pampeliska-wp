@@ -1,4 +1,5 @@
 @use '../abstract/' as *;
+@use 'sass:color';
 
 html {
 	font-size: $font-size;
@@ -71,6 +72,41 @@ html {
 				--tw-shadow: 1rem 1rem 0 #626f47;
 				--tw-shadow-colored: 1rem 1rem 0 var(--tw-shadow-color);
 				box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+			}
+		}
+
+		&:not(.home) {
+			main.wp-block-group {
+				margin-top: 6rem !important;
+			}
+		}
+
+		table {
+			&,
+			tr,
+			td {
+				border: none !important;
+			}
+
+			tr {
+				td {
+					padding: 0.5rem 1rem;
+					background-color: color.adjust($col-primary-light, $lightness: 30%) !important;
+				}
+
+				&:nth-child(2n) {
+					td {
+						background-color: color.adjust($col-primary-light, $lightness: 40%) !important;
+					}
+				}
+			}
+		}
+
+		&.page-id-114 {
+			.wp-block-image {
+				img {
+					mix-blend-mode: multiply;
+				}
 			}
 		}
 	}
